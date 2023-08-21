@@ -12,7 +12,7 @@ jobs:
       - name: Nuclei - Vulnerability Scan
         uses: projectdiscovery/nuclei-action@main
         with:
-          target: http://testphp.vulnweb.com/
+          target: http://localhost:8080/site/index.php
 
       - name: GitHub Workflow artifacts
         uses: actions/upload-artifact@v2
